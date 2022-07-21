@@ -1,0 +1,211 @@
+Python 2.7.18 (default, Mar  8 2021, 13:02:45) 
+[GCC 9.3.0] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>>5
+5
+>>> 2984823892893892899838389
+2984823892893892899838389L
+>>> 23
+23
+>>> 32
+32
+>>> 43
+43
+>>> 34
+34
+>>> 11
+11
+>>> 11
+11
+>>> 11
+11
+>>> 1111
+1111
+>>> 1111+1111
+2222
+>>> compuation
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'compuation' is not defined
+>>> computation= 1111+1111
+>>> computation
+2222
+>>> print(computation)
+2222
+>>> "bnananana"
+'bnananana'
+>>> 2.1
+2.1
+>>> pi
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'pi' is not defined
+>>> import math
+>>> pi
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'pi' is not defined
+>>> math.pi
+3.141592653589793
+>>> math.i
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'module' object has no attribute 'i'
+>>> math.tan(math.py)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'module' object has no attribute 'py'
+>>> math.tan(math.pi)
+-1.2246467991473532e-16
+>>> [4, 2, 7, 44, 197]
+[4, 2, 7, 44, 197]
+>>> {"cat1":"Ankh", "cat2":"dogdog", "cat3":"Hank"}
+{'cat1': 'Ankh', 'cat2': 'dogdog', 'cat3': 'Hank'}
+>>> gorg = [4, 2, 7, 44, 197]
+>>> gorg
+[4, 2, 7, 44, 197]
+>>> love = {"cat1":"Ankh", "cat2":"dogdog", "cat3":"Hank"}
+>>> love
+{'cat1': 'Ankh', 'cat2': 'dogdog', 'cat3': 'Hank'}
+>>> gorg
+[4, 2, 7, 44, 197]
+>>> len(gorg)
+5
+>>> gorg[0]
+4
+>>> gor[1]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'gor' is not defined
+>>> gorg[1]
+2
+>>> gorg[4]
+197
+>>> gorg[-1]
+197
+>>> gorg[5]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: list index out of range
+>>> gorg[1:3]
+[2, 7]
+>>> gorg.append('thing')
+>>> gorg
+[4, 2, 7, 44, 197, 'thing']
+>>> len(gorg)
+6
+>>> append(gorg, 'thing')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'append' is not defined
+>>> gorg+ [5, 73, 'sports']
+[4, 2, 7, 44, 197, 'thing', 5, 73, 'sports']
+>>> gorg
+[4, 2, 7, 44, 197, 'thing']
+>>> gorg.__add__([5, 73, 'sports'])
+[4, 2, 7, 44, 197, 'thing', 5, 73, 'sports']
+>>> gorg
+[4, 2, 7, 44, 197, 'thing']
+>>> gorg.extend([5, 73, 'sports'])
+>>> gorg
+[4, 2, 7, 44, 197, 'thing', 5, 73, 'sports']
+>>> gorg.reverse()
+>>> gorg
+['sports', 73, 5, 'thing', 197, 44, 7, 2, 4]
+>>> type(gorg)
+<type 'list'>
+>>> love
+{'cat1': 'Ankh', 'cat2': 'dogdog', 'cat3': 'Hank'}
+>>> len(love)
+3
+>>> love[0]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 0
+>>> love['cat2']
+'dogdog'
+>>> love.keys
+<built-in method keys of dict object at 0x7f5dfa057290>
+>>> love.keys()
+['cat1', 'cat2', 'cat3']
+>>> love.values()
+['Ankh', 'dogdog', 'Hank']
+>>> love.get(cat3)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'cat3' is not defined
+>>> love.get('cat3')
+'Hank'
+>>> love.get('catwef3')
+>>> love['cat3]
+  File "<stdin>", line 1
+    love['cat3]
+              ^
+SyntaxError: EOL while scanning string literal
+>>> love['cat3']
+'Hank'
+>>> love['catsdfsdf3']
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 'catsdfsdf3'
+>>> love.get('catwef3','cat3')
+'cat3'
+>>> love.get('cat3','catasdf3')
+'Hank'
+>>> love.get('catwef3','error')
+'error'
+>>> love.get('catwef3',3)
+3
+>>> love.update({
+... 'cat4':'Ryan'}
+... )
+>>> love
+{'cat1': 'Ankh', 'cat2': 'dogdog', 'cat3': 'Hank', 'cat4': 'Ryan'}
+>>> gorg
+['sports', 73, 5, 'thing', 197, 44, 7, 2, 4]
+>>> gorg.reverse()
+>>> gorg
+[4, 2, 7, 44, 197, 'thing', 5, 73, 'sports']
+>>> gorg.remove('sports')
+>>> gorg
+[4, 2, 7, 44, 197, 'thing', 5, 73]
+>>> gorg.append['the sun']
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'builtin_function_or_method' object has no attribute '__getitem__'
+>>> gorg.append('the sun')
+>>> gorg
+[4, 2, 7, 44, 197, 'thing', 5, 73, 'the sun']
+>>> gorg
+[4, 2, 7, 44, 197, 'thing', 5, 73, 'the sun']
+>>> [x+5 for x in gorg]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: cannot concatenate 'str' and 'int' objects
+>>> [x+5 for x in gorg if isinstance(x,int)]
+[9, 7, 12, 49, 202, 10, 78]
+>>> [x+5 if isinstance(x, int) else x for x in gorg]
+[9, 7, 12, 49, 202, 'thing', 10, 78, 'the sun']
+>>> [x+5 for x in gorg if isinstance(x, int) else x]
+  File "<stdin>", line 1
+    [x+5 for x in gorg if isinstance(x, int) else x]
+                                                ^
+SyntaxError: invalid syntax
+>>> isinstance(5, int)
+True
+>>> isinstance(5, str)
+False
+>>> isinstance(cat2, str)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'cat2' is not defined
+>>> isinstance('cat2', str)
+True
+>>> isinstance(love['cat2'], str)
+True
+>>> isinstance(love['cat2'], str)
+True
+>>> print('thank you' + love['cat4'])
+thank youRyan
+>>> 
+>>> 
