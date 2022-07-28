@@ -1,10 +1,20 @@
-# HOMEWORK: unfold edges. Generate a list of tuples from the folded edges dictionary
-# HOMEWORK: create a github account and remember your password somehow 
-# do git stuff at beginning of next class
+# HOMEWORK: graph traversal algorithms!
+# path_exists(a, b) returns TRUE if you can get to b from a along edges
+def unfold_edges(fold):
+    edges = []
+    for source in fold:
+        targets = fold[source]
+        for target in targets:
+            edge = (source, target)
+            edges.append(edge)
+    return edges
 
 def fold_edges(edges):
     fold = {}
     for edge in edges:
+        #source = edge[0]
+        #target = edge[1]
+        #the 2 lines above are equivalent to the line below. 
         source, target = edge
         if source not in fold:
             fold[source] = []
@@ -38,8 +48,11 @@ def test_graph():
         
     graph = Graph(nodes, edges)
 
+    unfold = unfold_edges(graph.fold)
+    print(graph.edges)
     print(graph.fold)
-
+    print(unfold)
+    
 
 if __name__ == '__main__':
     test_graph()
