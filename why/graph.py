@@ -1,6 +1,8 @@
 # HOMEWORK: graph traversal algorithms!
 # path_exists(a, b) returns TRUE if you can get to b from a along edges
 
+import copy
+
 def unfold_edges(fold):
     edges = []
     for source in fold:
@@ -52,7 +54,11 @@ class Graph():
             if target == end:
                 paths.append((start, end))
             elif target not in visited:
-                target_paths = self.find_paths(target, end, visited)
+                target_visited = copy.deepcopy(visited)
+                target_paths = self.find_paths(
+                    target,
+                    end,
+                    target_visited)
                 if not len(target_paths) == 0:
                     paths.extend([
                         (start,) + path
